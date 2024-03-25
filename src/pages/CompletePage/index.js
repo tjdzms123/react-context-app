@@ -1,11 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const CompletePage = () => {
-  return (
-    <div>
-      
-    </div>
-  )
-}
+  return <div>CompletePage</div>;
+};
 
-export default CompletePage
+export default CompletePage;
