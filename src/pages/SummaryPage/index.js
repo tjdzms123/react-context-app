@@ -10,7 +10,7 @@ const SummaryPage = () => {
           type="checkbox"
           checked={checked}
           id="confirm-checkbox"
-          onClick={e => setChecked(e.target.checked)}
+          onChange={e => setChecked(e.target.checked)}
         />{' '}
         <label htmlFor="confirm-checkbox">주문 확인을 하셨나요?</label>
         <br />
