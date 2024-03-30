@@ -1,9 +1,17 @@
-import React from 'react'
+import React from 'react';
 
-const Options = () => {
+const Options = ({ name, updateItemCount }) => {
   return (
-    <div>Options</div>
-  )
-}
+    <form>
+      <input
+        type="checkbox"
+        id={`${name} option`}
+        onChange={e => updateItemCount(name, e.target.checked ? 1 : 0)}
+      />
+      &nbsp;
+      <label htmlFor={`${name} option`}>{name}</label>
+    </form>
+  );
+};
 
-export default Options
+export default Options;
